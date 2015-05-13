@@ -40,23 +40,6 @@
 
 - NOTE：不需要传其他参数，如果当前用户已经关注该话题，会取消关注，反之则关注
 
-## 话题关注，取消关注操作
-
-> URL：focus_topic.php （http://www.example.com/api/focus_topic.php）
-
-> HTTP请求方式
-
-- POST
-
-> 请求参数：
-
-> [In] Int uid （必须）
-
-> [In] Int topic_id （必须）
-
-> [In] String type （选，如果是取消关注，此值设为 'cancel' ）
-
-> 如果成功，errno为1，不多解释，因“说在前面”有解释
 
 ##话题广场 （我关注的话题列表，热门话题列表，今日话题列表）
 
