@@ -1,9 +1,4 @@
-安全,稳定,防火防盗的接口文档
-==============
 
-API 接口测试站点:
-
-http://w.hihwei.com/
 
 - 话题图片文件夹：http://w.hihwei.com/uploads/topic/
 - 头像图片文件夹：http://w.hihwei.com/uploads/avatar/
@@ -19,40 +14,5 @@ http://w.hihwei.com/
 ![Image](https://raw.githubusercontent.com/ifLab/WeCenterMobile-Api/master/docs/img/success.png)
 
 ![Image](https://raw.githubusercontent.com/ifLab/WeCenterMobile-Api/master/docs/img/error.png)
-
-
-##用户账号相关接口
-
-https://github.com/ifLab/WeCenterMobile-Api/blob/master/docs/API_Account.md
-
-##发布相关接口
-
-https://github.com/ifLab/WeCenterMobile-Api/blob/master/docs/API_Publish.md
-
-##发现接口
-
-https://github.com/ifLab/WeCenterMobile-Api/blob/master/docs/API_Explore.md
-
-##首页接口
-
-https://github.com/ifLab/WeCenterMobile-Api/blob/master/docs/API_Home.md
-
-##用户中心相关列表接口
-
-https://github.com/ifLab/WeCenterMobile-Api/blob/master/docs/API_UList.md
-
-##话题相关接口
-
-https://github.com/ifLab/WeCenterMobile-Api/blob/master/docs/API_Topic.md
-
-##问题和回答相关接口
-
-https://github.com/ifLab/WeCenterMobile-Api/blob/master/docs/API_Q%26A.md
-
-##文章和评论相关接口
-
-https://github.com/ifLab/WeCenterMobile-Api/blob/master/docs/API_Article.md
-
-
 
 
