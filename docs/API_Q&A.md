@@ -154,7 +154,7 @@
 
 - [POST] message (评论内容)  【 如果对回答评论进行回复，此字段值格式是：@Hwei:你的回复很赞，跟Web版是一样的 】
 
-## 对回答踩和赞的操作 
+## 对回答踩和赞的操作 （new）
 
 > URL： question/ajax/answer_vote/  （http://w.hihwei.com/?/question/ajax/answer_vote/）
 
