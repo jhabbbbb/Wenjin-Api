@@ -118,59 +118,16 @@
 
 > [Out] Int(答案被收藏次数)
 
+> [Out] Int integral 积分
+
+> [Out] Int sex 性别 0：未知 1：男  2：女  3：保密
+
+> [Out] Int reputation 威望值
+
 > [Out] Int(当前登录用户是否关注了该用户,如果已关注，则has_focus为1，否则为0)
 
-## 获取用户信息
 
-> URL：user.php （http://www.example.com/api/user.php）
-
-> HTTP请求方式
-
-- GET
-
-> 请求参数：
-
-> [In] Int(UID)
-
-> [Out] String(用户头像URI)
-
-> [Out] String(用户名)
-
-> [Out] Int(我的话题数)
-
-> [Out] Int(我关注的人数)
-
-> [Out] Int(关注我的人数)
-
-> [Out] Int(赞同我的次数)
-
-> [Out] Int(感谢我的次数)
-
-> [Out] Int(答案被收藏次数)
-
-##用于展示用户信息  
-
-> URL：profile.php （http://www.example.com/api/profile.php）
-
-> HTTP请求方式
-
-- GET
-
-> 请求参数：
-
-> [In] Int(UID)
-
-> [Out] String(用户名)
-
-> [Out] Int(性别ID)
-
-> [Out] String(个人简介)
-
-> [Out] Int(行业ID)
-
-> [Out] Date(生日)
-
-##用于修改用户信息  （除uid和user_name外，其他为可选）
+##用于修改用户信息  
 
 > URL：profile_setting.php （http://www.example.com/api/profile_setting.php）
 
@@ -182,13 +139,11 @@
 
 > [In] Int(UID)  uid (必须)
 
-> [In] String(用户名)   user_name （必须）
+> [In] String(昵称)   nick_name 
 
 > [In] Int(性别ID)  sex (tinyint，1：男  2：女  3：保密)    
 
 > [In] String(个人简介)  signature (string，个人签名[简介])
-
-> [In] Int(行业ID) job_id(int) 
 
 > [In] Date(生日)  birthday(int，Unix 时间戳)
 
