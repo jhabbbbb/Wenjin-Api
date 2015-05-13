@@ -2,7 +2,7 @@
 
 ##问题详情
 
-> URL：api/question/question/   （  DEMO: view-source:http://w.hihwei.com/?/api/question/question/?id=2  ）
+> URL：api/question/question/   （  DEMO: /?/api/question/question/?id=2  ）
 
 > HTTP请求方式
 
@@ -46,7 +46,7 @@
 
 ## 关注该问题的用户列表
 
-> URL：question_fans_user.php   （  DEMO: http://w.hihwei.com/api/question_fans_user.php?id=2  ）
+> URL：question_fans_user.php   （  DEMO: /api/question_fans_user.php?id=2  ）
 
 > HTTP请求方式
 
@@ -65,36 +65,15 @@
 > [out] 用户一句话签名
 
 
-## 回答的详细
+## 回答的详细 
 
-> URL：answer_detail.php   （  DEMO: http://w.hihwei.com/api/answer_detail.php?id=4  ）
-
+> URL：api/question/answer_detail/   （  DEMO: /?/api/question/answer_detail/?id=4  ）
+##   
 > HTTP请求方式
 
-- GET
 
-> 请求参数：
-
-> [In] id 回答编号
-
-> [Out] Int(用户ID)
-
-> [Out] Int(赞同数)
-
-> [Out] String(正文)
-
-> [Out] Int(评论数)
-
-> [Out] Date(日期) 
-
-
-## 回答的详细 （第二版）
-
-> URL：api/question/answer_detail/   （  DEMO: w.hihwei.com/?/api/question/answer_detail/?id=4  ）
-
-> HTTP请求方式
-
-- GET
+> GET
+##  
 
 > 请求参数：
 
@@ -103,7 +82,8 @@
 > [Out] Int(回答ID)
 
 > [Out] Int(所属问题ID)
-
+##  
+> 返回参数
 > [Out] Int(用户ID)
 
 > [Out] String(用户名)
@@ -121,6 +101,8 @@
 > [Out] Date(日期) 
 
 > [Out] Int(当前登录用户是否赞或踩了该回答,如果已赞，则vote_value为1，如果已踩，vote_value为-1，否则为0) 
+> [out] Int 是否已经感谢，如果已经感谢thank值为1，否则则为0
+
 
 
 ## 回答的评论列表
@@ -189,6 +171,27 @@
 - answer_id (回答ID) 
 
 - value ( 如果是赞和取消赞，此参数值为：1，如果是踩和取消踩，此参数值为-1）
+
+## 对回答感谢的操作 
+
+> URL： /api/question/answer_thank/  （/?/api/question/answer_thank/）
+
+> HTTP请求方式
+
+- GET
+
+> Header
+
+- COOKIE
+
+> 请求参数 
+
+- answer_id (回答ID) 
+
+- type 此时参数固定为thank
+
+- NOTE:成功时rsm返回数组,action为add，失败err内有错误信息
+- 可能的错误：积分不足，已经赞过，答案不存在。
 
 ## 问题关注，取消关注操作
 
