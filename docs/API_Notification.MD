@@ -1,6 +1,6 @@
 #用户通知中心相关接口
 
-##检查是否有通知
+##检查是否有通知、未读私信、动态
 
 > URL：api/notification/notifications/  (/?/api/notification/notifications/)
 
@@ -16,6 +16,7 @@
 
 - [int] inbox_num 未读私信数量
 - [int] notifications_num 未读通知数量
+- [int] new_action  新动态数量
 
 > 可能返回的错误原因：
 
