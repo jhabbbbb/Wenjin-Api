@@ -1,5 +1,34 @@
 #用户通知中心相关接口
+##action_type列表
+	const TYPE_PEOPLE_FOCUS	= 101;	// 被人关注
+	const TYPE_NEW_ANSWER	= 102;	// 关注的问题增加了新回复
+	const TYPE_COMMENT_AT_ME	= 103;	// 有评论@提到我
+	const TYPE_INVITE_QUESTION	= 104;	// 被人邀请问题问题
+	const TYPE_ANSWER_COMMENT	= 105;	// 我的回复被评论
+	const TYPE_QUESTION_COMMENT	= 106;	// 我的问题被评论
+	const TYPE_ANSWER_AGREE	= 107;	// 我的回复收到赞同
+	const TYPE_ANSWER_THANK	= 108;	// 我的回复收到感谢
+	const TYPE_MOD_QUESTION	= 110;	// 我发布的问题被编辑
+	const TYPE_REMOVE_ANSWER	= 111;	// 我发表的回复被删除
 
+	const TYPE_REDIRECT_QUESTION	= 113;	// 我发布的问题被重定向
+	const TYPE_QUESTION_THANK	= 114;	// 我发布的问题收到感谢
+	const TYPE_CONTEXT	= 100;	// 纯文本通知
+
+	const TYPE_ANSWER_AT_ME	= 115;	// 有回答 @ 提到我
+	const TYPE_ANSWER_COMMENT_AT_ME	= 116;	// 有回答评论 @ 提到我
+
+	const TYPE_ARTICLE_NEW_COMMENT	= 117; // 文章有新评论
+	const TYPE_ARTICLE_COMMENT_AT_ME	= 118; // 文章评论提到我
+
+	const TYPE_ARTICLE_APPROVED = 131; // 文章通过审核
+	const TYPE_ARTICLE_REFUSED = 132; // 文章未通过审核
+	const TYPE_QUESTION_APPROVED = 133; // 问题通过审核
+	const TYPE_QUESTION_REFUSED = 134; // 问题未通过审核
+
+	const TYPE_TICKET_REPLIED = 141; // 工单被回复
+	const TYPE_TICKET_CLOSED = 142; // 工单被关闭
+	
 ##检查是否有通知、未读私信、动态
 
 > URL：api/notification/notifications/  (/?/api/notification/notifications/)
