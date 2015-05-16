@@ -43,5 +43,13 @@
 
 > 有些动态来自于用户关注的topic，对于这部分分动态，api会自动产生topic_info项，该项与answer_user项目共存，请务必优先调用topic_info的内容，如果topic_info为空数组，在调用answer_user的内容
 
+##检查是否有新动态
+
+>该接口已经与检查未读通知数量和私信数量合并
+>详情参见/notification/notifications/接口
+
+> 可能返回的错误原因：
+
+- 未登录
 
 
