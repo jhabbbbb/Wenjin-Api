@@ -103,6 +103,8 @@
 > [Out] Int(当前登录用户是否赞或踩了该回答,如果已赞，则vote_value为1，如果已踩，vote_value为-1，否则为0) 
 > [out] Int 是否已经感谢，如果已经感谢thank值为1，否则则为0
 
+> [out] Int 是否选择没有帮助，如果已经选择了“没有帮助”unintrested值为1，否则则为0
+
 
 
 ## 回答的评论列表
@@ -174,7 +176,7 @@
 
 ## 对回答感谢的操作 
 
-> URL： /api/question/answer_thank/  （/?/api/question/answer_thank/）
+> URL： /api/question/answer_vote/  （/?/api/question/answer_vote/）
 
 > HTTP请求方式
 
@@ -186,12 +188,34 @@
 
 > 请求参数 
 
-- answer_id (回答ID) 
+> [int]answer_id (回答ID) 
 
-- type 此时参数固定为thank
+> [string] type 此时参数固定为thank
 
 - NOTE:成功时rsm返回数组,action为add，失败err内有错误信息
 - 可能的错误：积分不足，已经赞过，答案不存在。
+
+## 对回答选择“没有帮助”
+>这个操作涉及到答案是否会被折叠！请注意请求参数与感谢回答的区别！！！！！
+
+> URL： /api/question/answer_vote/  （/?/api/question/answer_vote/）
+
+> HTTP请求方式
+
+- GET
+
+> Header
+
+- COOKIE
+
+> 请求参数 
+
+> [int]answer_id (回答ID) 
+
+> [string] type 此时参数固定为uninterested
+## 
+> 返回参数
+> 增加[没有帮助]返回add，取消[没有帮助]返回remove
 
 ## 问题关注，取消关注操作
 
