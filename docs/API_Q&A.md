@@ -101,7 +101,8 @@
 > [Out] Date(日期) 
 
 > [Out] Int(当前登录用户是否赞或踩了该回答,如果已赞，则vote_value为1，如果已踩，vote_value为-1，否则为0) 
-> [out] Int 是否已经感谢，如果已经感谢thank值为1，否则则为0
+
+> [out] Int 是否已经感谢，如果已经感谢thank_value值为1，否则则为0
 
 > [out] Int 是否选择没有帮助，如果已经选择了“没有帮助”unintrested值为1，否则则为0
 
