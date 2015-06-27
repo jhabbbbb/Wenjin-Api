@@ -60,6 +60,10 @@
 
 - topics (string, 话题标题，多个话题标题请以英文逗号隔开)
 
+- latitude (double, 提问者所在纬度)
+
+- longitude (double, 提问者所在经度)
+
 > 返回结果：
 
 - question_id （问题ID)
