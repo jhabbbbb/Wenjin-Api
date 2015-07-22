@@ -203,7 +203,7 @@
 
 > HTTP请求方式
 
-- GET
+- POST
 
 > Header
 
@@ -216,7 +216,7 @@
 > [string] type 此时参数固定为uninterested
 ## 
 > 返回参数
-> 增加[没有帮助]返回add，取消[没有帮助]返回remove
+> 增加[没有帮助]返回add
 
 ## 问题关注，取消关注操作
 
