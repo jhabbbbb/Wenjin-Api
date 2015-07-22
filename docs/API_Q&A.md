@@ -181,7 +181,7 @@
 
 > HTTP请求方式
 
-- GET
+- POST
 
 > Header
 
