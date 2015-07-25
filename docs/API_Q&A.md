@@ -191,7 +191,7 @@
 
 > [int]answer_id (回答ID) 
 
-> [string] type 此时参数固定为thank
+> [string] type 此时参数固定为thanks
 
 - NOTE:成功时rsm返回数组,action为add，失败err内有错误信息
 - 可能的错误：积分不足，已经赞过，答案不存在。
